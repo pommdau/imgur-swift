@@ -11,7 +11,7 @@
 		DA596E9C2A6FC298001B58D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA596E9B2A6FC298001B58D0 /* ContentView.swift */; };
 		DA596E9E2A6FC299001B58D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA596E9D2A6FC299001B58D0 /* Assets.xcassets */; };
 		DA596EA12A6FC299001B58D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA596EA02A6FC299001B58D0 /* Preview Assets.xcassets */; };
-		DA596EAA2A6FC2E8001B58D0 /* ImgurSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA596EA92A6FC2E8001B58D0 /* ImgurSwift */; };
+		DA596EAF2A6FC5B9001B58D0 /* ImgurSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA596EAE2A6FC5B9001B58D0 /* ImgurSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +21,7 @@
 		DA596E9D2A6FC299001B58D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA596EA02A6FC299001B58D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA596EA22A6FC299001B58D0 /* ImgurSwiftExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImgurSwiftExample.entitlements; sourceTree = "<group>"; };
+		DA596EAC2A6FC5A1001B58D0 /* ImgurSwift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ImgurSwift; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA596EAA2A6FC2E8001B58D0 /* ImgurSwift in Frameworks */,
+				DA596EAF2A6FC5B9001B58D0 /* ImgurSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +39,10 @@
 		DA596E8D2A6FC298001B58D0 = {
 			isa = PBXGroup;
 			children = (
+				DA596EAB2A6FC5A1001B58D0 /* Packages */,
 				DA596E982A6FC298001B58D0 /* ImgurSwiftExample */,
 				DA596E972A6FC298001B58D0 /* Products */,
+				DA596EAD2A6FC5B9001B58D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +74,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DA596EAB2A6FC5A1001B58D0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DA596EAC2A6FC5A1001B58D0 /* ImgurSwift */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		DA596EAD2A6FC5B9001B58D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,7 +106,7 @@
 			);
 			name = ImgurSwiftExample;
 			packageProductDependencies = (
-				DA596EA92A6FC2E8001B58D0 /* ImgurSwift */,
+				DA596EAE2A6FC5B9001B58D0 /* ImgurSwift */,
 			);
 			productName = ImgurSwiftExample;
 			productReference = DA596E962A6FC298001B58D0 /* ImgurSwiftExample.app */;
@@ -119,7 +137,6 @@
 			);
 			mainGroup = DA596E8D2A6FC298001B58D0;
 			packageReferences = (
-				DA596EA82A6FC2E8001B58D0 /* XCRemoteSwiftPackageReference "imgur-swift" */,
 			);
 			productRefGroup = DA596E972A6FC298001B58D0 /* Products */;
 			projectDirPath = "";
@@ -345,21 +362,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		DA596EA82A6FC2E8001B58D0 /* XCRemoteSwiftPackageReference "imgur-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pommdau/imgur-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		DA596EA92A6FC2E8001B58D0 /* ImgurSwift */ = {
+		DA596EAE2A6FC5B9001B58D0 /* ImgurSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA596EA82A6FC2E8001B58D0 /* XCRemoteSwiftPackageReference "imgur-swift" */;
 			productName = ImgurSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
