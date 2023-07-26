@@ -12,6 +12,16 @@
 		DA596E9E2A6FC299001B58D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA596E9D2A6FC299001B58D0 /* Assets.xcassets */; };
 		DA596EA12A6FC299001B58D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA596EA02A6FC299001B58D0 /* Preview Assets.xcassets */; };
 		DA596EAF2A6FC5B9001B58D0 /* ImgurSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DA596EAE2A6FC5B9001B58D0 /* ImgurSwift */; };
+		DA6B530E2A70AC630049392A /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B530D2A70AC630049392A /* AccessTokenManager.swift */; };
+		DA6B53102A70AC8E0049392A /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B530F2A70AC8E0049392A /* DataParser.swift */; };
+		DA6B53122A70ACAD0049392A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B53112A70ACAD0049392A /* RequestManager.swift */; };
+		DA6B53142A70ACC00049392A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B53132A70ACC00049392A /* APIManager.swift */; };
+		DA6B53162A70ACD20049392A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B53152A70ACD20049392A /* NetworkError.swift */; };
+		DA6B53192A70B2BA0049392A /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B53182A70B2BA0049392A /* RequestProtocol.swift */; };
+		DA6B531B2A70B2CB0049392A /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B531A2A70B2CB0049392A /* RequestType.swift */; };
+		DA6B531F2A70B3180049392A /* APIToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B531E2A70B3180049392A /* APIToken.swift */; };
+		DA6B53212A70B33B0049392A /* AuthTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B53202A70B33B0049392A /* AuthTokenRequest.swift */; };
+		DA6B53232A70B4120049392A /* AppUserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6B53222A70B4120049392A /* AppUserDefaultsKeys.swift */; };
 		DABCD7162A6FD39200C425D9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABCD7152A6FD39200C425D9 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +33,16 @@
 		DA596EA02A6FC299001B58D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA596EA22A6FC299001B58D0 /* ImgurSwiftExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImgurSwiftExample.entitlements; sourceTree = "<group>"; };
 		DA596EAC2A6FC5A1001B58D0 /* ImgurSwift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ImgurSwift; path = ..; sourceTree = "<group>"; };
+		DA6B530D2A70AC630049392A /* AccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
+		DA6B530F2A70AC8E0049392A /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		DA6B53112A70ACAD0049392A /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		DA6B53132A70ACC00049392A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DA6B53152A70ACD20049392A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DA6B53182A70B2BA0049392A /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		DA6B531A2A70B2CB0049392A /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		DA6B531E2A70B3180049392A /* APIToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIToken.swift; sourceTree = "<group>"; };
+		DA6B53202A70B33B0049392A /* AuthTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenRequest.swift; sourceTree = "<group>"; };
+		DA6B53222A70B4120049392A /* AppUserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaultsKeys.swift; sourceTree = "<group>"; };
 		DABCD7152A6FD39200C425D9 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +112,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA6B53082A70AB400049392A /* network */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B53112A70ACAD0049392A /* RequestManager.swift */,
+				DA6B53132A70ACC00049392A /* APIManager.swift */,
+				DA6B53152A70ACD20049392A /* NetworkError.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		DA6B53092A70AB400049392A /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B530F2A70AC8E0049392A /* DataParser.swift */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		DA6B530B2A70AB400049392A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B531E2A70B3180049392A /* APIToken.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DA6B530C2A70AB400049392A /* request */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B53172A70B2B40049392A /* base */,
+				DA6B531C2A70B2FF0049392A /* auth */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		DA6B53172A70B2B40049392A /* base */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B53182A70B2BA0049392A /* RequestProtocol.swift */,
+				DA6B531A2A70B2CB0049392A /* RequestType.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		DA6B531C2A70B2FF0049392A /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B53202A70B33B0049392A /* AuthTokenRequest.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
 		DABCD70F2A6FD33F00C425D9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +193,7 @@
 		DABCD7122A6FD34A00C425D9 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				DA6B53222A70B4120049392A /* AppUserDefaultsKeys.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -128,6 +201,11 @@
 		DABCD7132A6FD35C00C425D9 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				DABCD7182A70AAB100C425D9 /* token */,
+				DA6B53092A70AB400049392A /* parser */,
+				DA6B53082A70AB400049392A /* network */,
+				DA6B530C2A70AB400049392A /* request */,
+				DA6B530B2A70AB400049392A /* model */,
 				DABCD7152A6FD39200C425D9 /* APIConstants.swift */,
 			);
 			path = api;
@@ -138,6 +216,14 @@
 			children = (
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		DABCD7182A70AAB100C425D9 /* token */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B530D2A70AC630049392A /* AccessTokenManager.swift */,
+			);
+			path = token;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6B53192A70B2BA0049392A /* RequestProtocol.swift in Sources */,
+				DA6B53212A70B33B0049392A /* AuthTokenRequest.swift in Sources */,
 				DA596E9C2A6FC298001B58D0 /* ContentView.swift in Sources */,
+				DA6B53162A70ACD20049392A /* NetworkError.swift in Sources */,
+				DA6B53102A70AC8E0049392A /* DataParser.swift in Sources */,
+				DA6B530E2A70AC630049392A /* AccessTokenManager.swift in Sources */,
+				DA6B53232A70B4120049392A /* AppUserDefaultsKeys.swift in Sources */,
+				DA6B53122A70ACAD0049392A /* RequestManager.swift in Sources */,
 				DA596E9A2A6FC298001B58D0 /* ImgurSwiftExampleApp.swift in Sources */,
 				DABCD7162A6FD39200C425D9 /* APIConstants.swift in Sources */,
+				DA6B53142A70ACC00049392A /* APIManager.swift in Sources */,
+				DA6B531B2A70B2CB0049392A /* RequestType.swift in Sources */,
+				DA6B531F2A70B3180049392A /* APIToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

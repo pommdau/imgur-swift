@@ -8,6 +8,7 @@
 import Foundation
 
 enum APIConstants {
+    static let host = "https://api.imgur.com"
     static let clientID = ""
     static let clientSecret = ""
 }
